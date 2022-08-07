@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SungEun's Portfolio</title>
+    <meta name="description" content="Portfolio for SungEun" />
+    <script
+      src="https://kit.fontawesome.com/5cc26a2412.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="icon" type="image/png" href="imgs/profile.png" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nanum+Myeongjo&family=Open+Sans:wght@400;600;700&family=Roboto:wght@100&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script src="main.js" defer></script>
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav id="navbar">
+      <div class="navbar__logo">
+        <i class="fab fa-diaspora"></i>
+        <a href="#">SungEun</a>
+      </div>
+      <div class="navbar__menu">
+        <li class="navbar__menu__item active" data-link="#home">Home</li>
+        <li class="navbar__menu__item" data-link="#about">About</li>
+        <li class="navbar__menu__item" data-link="#skills">Skills</li>
+        <li class="navbar__menu__item" data-link="#work">My work</li>
+        <li class="navbar__menu__item" data-link="#testimonials">
+          Testimonials
+        </li>
+        <li class="navbar__menu__item" data-link="#contact">Contact</li>
+      </div>
+      <button class="navbar__toggle-btn">
+        <i class="fas fa-bars"></i>
+      </button>
+    </nav>
+    <!-- Home -->
+    <section id="home">
+      <div class="home__container">
+        <img
+          src="imgs/profile.png"
+          alt="SungEun's profile"
+          class="home__avatar"
+        />
+        <h1 class="home__title">Welcome to My HomePage!</h1>
+        <h2 class="home__description">I want to be a FrontEnd engineer</h2>
+        <button class="home__contact">Contact Me</button>
+      </div>
+    </section>
+    <!-- About -->
+    <section id="about" class="section section__container">
+      <h1>About Me</h1>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero laborum
+        saepe, odio sit atque ipsa dolor blanditiis ipsam enim consequuntur unde
+        quisquam veritatis omnis soluta officia temporibus dignissimos corrupti
+        eos!
+      </p>
+      <div class="about__majors">
+        <div class="major">
+          <div class="major__icon">
+            <i class="fab fa-html5"></i>
+          </div>
+          <h2 class="major__title">SungKyunKwan University</h2>
+          <p class="major__description">
+            <li>Computer Engineering</li>
+            <li>Systems Management Engineering</li>
+          </p>
+        </div>
+        <div class="major">
+          <div class="major__icon">
+            <i class="fab fa-html5"></i>
+          </div>
+          <h2 class="major__title">FrontEnd</h2>
+          <p class="major__description">HTML, CSS, JavaScript, React</p>
+        </div>
+        <div class="major">
+          <div class="major__icon">
+            <i class="fab fa-html5"></i>
+          </div>
+          <h2 class="major__title">BackEnd</h2>
+          <p class="major__description">JavaScript, NodeJS</p>
+        </div>
+      </div>
+    </section>
+    <!-- Skills -->
+    <section id="skills" class="section">
+      <div class="section__container">
+        <h1>Skills</h1>
+        <h2>Skills & Attributes</h2>
+        <p>
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dicta
+          voluptatibus necessitatibus quo, incidunt atque quae fugiat placeat
+          temporibus consequatur minus dolore numquam beatae vitae natus
+          voluptate illo. Nisi, sed magnam!
+        </p>
+        <div class="skillset">
+          <div class="skillset__left">
+            <h3 class="skillset__title">Skills</h3>
+            <div class="skill">
+              <div class="skill__description">
+                <span>HTML</span>
+                <span>60%</span>
+              </div>
+              <div class="skill__bar">
+                <div class="skill__value" style="width: 60%"></div>
+              </div>
+            </div>
+            <div class="skill">
+              <div class="skill__description">
+                <span>CSS</span>
+                <span>50%</span>
+              </div>
+              <div class="skill__bar">
+                <div class="skill__value" style="width: 50%"></div>
+              </div>
+            </div>
+            <div class="skill">
+              <div class="skill__description">
+                <span>JavaScript</span>
+                <span>50%</span>
+              </div>
+              <div class="skill__bar">
+                <div class="skill__value" style="width: 50%"></div>
+              </div>
+            </div>
+            <div class="skill">
+              <div class="skill__description">
+                <span>React</span>
+                <span>50%</span>
+              </div>
+              <div class="skill__bar">
+                <div class="skill__value" style="width: 50%"></div>
+              </div>
+            </div>
+            <div class="skill">
+              <div class="skill__description">
+                <span>NodeJS</span>
+                <span>40%</span>
+              </div>
+              <div class="skill__bar">
+                <div class="skill__value" style="width: 40%"></div>
+              </div>
+            </div>
+          </div>
+          <div class="skillset__right">
+            <div class="tools">
+              <h3 class="skillset__title">Tools</h3>
+              <ul class="tools__list">
+                <li><span>Visual Studio</span></li>
+                <li><span>Visual Studio Code</span></li>
+              </ul>
+            </div>
+            <div class="etc">
+              <h3 class="skillset__title">Etc</h3>
+              <ul class="etc__list">
+                <li><span>Git</span></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Work -->
+    <section id="work" class="section">
+      <div class="section__container">
+        <h1>My Work</h1>
+        <h3>Projects</h3>
+        <div class="work__categories">
+          <button class="category__btn">
+            All <span class="category__count">8</span>
+          </button>
+          <button class="category__btn">
+            FrontEnd <span class="category__count">3</span>
+          </button>
+          <button class="category__btn">
+            BackEnd <span class="category__count">3</span>
+          </button>
+        </div>
+        <div class="work__projects">
+          <a href="#" class="project" target="_blank">
+            <img src="imgs/profile.png" alt="" class="project__img" />
+            <div class="project__description">
+              <h3>Youtube Site</h3>
+              <span>Clone coding with HTML, CSS</span>
+            </div>
+          </a>
+          <a href="#" class="project" target="_blank">
+            <img src="imgs/profile.png" alt="" class="project__img" />
+            <div class="project__description">
+              <h3>Youtube Site</h3>
+              <span>Clone coding with HTML, CSS</span>
+            </div>
+          </a>
+          <a href="" class="project" target="_blank">
+            <img src="imgs/profile.png" alt="" class="project__img" />
+            <div class="project__description">
+              <h3>Youtube Site</h3>
+              <span>Clone coding with HTML, CSS</span>
+            </div>
+          </a>
+          <a href="" class="project" target="_blank">
+            <img src="imgs/profile.png" alt="" class="project__img" />
+            <div class="project__description">
+              <h3>Youtube Site</h3>
+              <span>Clone coding with HTML, CSS</span>
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+    <!-- Testimonials -->
+    <section id="testimonials" class="section">
+      <div class="section__container">
+        <h1>Testimonials</h1>
+        <h3>See what they say about me</h3>
+        <div class="testimonials">
+          <div class="testimonial">
+            <img
+              src="imgs/profile.png"
+              alt="People"
+              class="testimonial__avatar"
+            />
+            <div class="testimonial__speech-bubble">
+              <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                Cumque, veritatis accusamus quaerat tempore ex officiis
+                accusantium facere. Velit dolor impedit necessitatibus eius
+                pariatur, sequi ex cumque dolorum, corrupti voluptas officiis!
+              </p>
+              <p class="name"><a href="">A</a></p>
+            </div>
+          </div>
+          <div class="testimonial">
+            <div class="testimonial__speech-bubble">
+              <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                Cumque, veritatis accusamus quaerat tempore ex officiis
+                accusantium facere. Velit dolor impedit necessitatibus eius
+                pariatur, sequi ex cumque dolorum, corrupti voluptas officiis!
+              </p>
+              <p class="name"><a href="">B</a></p>
+            </div>
+            <img
+              src="imgs/profile.png"
+              alt="People"
+              class="testimonial__avatar"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Contact -->
+    <section id="contact" class="section">
+      <h1 class="contact__title">Let's talk</h1>
+      <h2 class="contact__email">syung1201@gmail.com</h2>
+      <div class="contact__links">
+        <a href="https://github.com/yjunej" target="_blank">
+          <i class="fab fa-github"></i>
+        </a>
+      </div>
+      <p class="contact__rights">By SungEun</p>
+    </section>
+
+    <!-- Arrow up -->
+    <button class="arrow-up">
+      <i class="fas fa-arrow-up"></i>
+    </button>
+  </body>
+</html>
