@@ -43,6 +43,37 @@ document.querySelector(".btn3").addEventListener("click", function () {
   workProject.style.transform = "translateX(-200vw)";
   Now = 3;
 });
+// Make mouse event for Work
+let startPosition = 0;
+let isPress = false;
+const work1 = document.querySelector(".work1");
+const work2 = document.querySelector(".work2");
+const work3 = document.querySelector(".work3");
+
+// work1.addEventListener("mousedown", function (e) {
+//   startPosition = e.clientX;
+//   isPress = true;
+//   console.log("1");
+// });
+// work1.addEventListener("mousemove", function (e) {
+//   if (isPress == true) {
+//     workProject.style.transform = `translateX(${e.clientX - startPosition}px)`;
+//     console.log("2");
+//   }
+// });
+// work1.addEventListener("mouseup", function (e) {
+//   isPress = false;
+//   if (e.clientX - startPosition < -300) {
+//     workProject.style.transform = "translateX(-100vw)";
+//   } else {
+//     workProject.style.transform = "translateX(0vw)";
+//   }
+//   setTimeout(() => {
+//     workProject.style.transition = "none";
+//   }, 500);
+//   console.log("3");
+// });
+
 // Navbar toggle button for small screen
 const navbarToggleBtn = document.querySelector(".navbar__toggle-btn");
 navbarToggleBtn.addEventListener("click", () => {

@@ -284,9 +284,11 @@ h3 {
 }
 .work__title {
   color: white;
+  width: 100vw;
 }
 .work__categories {
   margin: 40px;
+  width: 100vw;
 }
 .category__btn {
   border: 1px solid var(--color-dark-white);
@@ -375,6 +377,7 @@ h3 {
   opacity: 0;
   transform: translateY(10px);
   transition: all var(--animation-duration) ease-in;
+  margin: auto;
 }
 
 .project:hover .project__description {
