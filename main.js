@@ -10,6 +10,11 @@ document.addEventListener("scroll", () => {
     navbar.classList.remove("navbar--dark");
   }
 });
+// Handle Logo when clicking
+const navbarLogo = document.querySelector(".navbar__logo");
+navbarLogo.addEventListener("click", () => {
+  scrollIntoView("#home");
+});
 // Handle scrollinig when topping on the navbar menu
 const navbarMenu = document.querySelector(".navbar__menu");
 navbarMenu.addEventListener("click", (event) => {

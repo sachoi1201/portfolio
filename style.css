@@ -40,6 +40,7 @@
 body {
   font-family: "Nanum Myeongjo", serif;
   margin: 0;
+  user-select: none;
 }
 a {
   text-decoration: none;
@@ -177,19 +178,31 @@ h3 {
 }
 
 /* About */
+#about {
+  background: linear-gradient(#3673fa, #9b72fa);
+  color: var(--color-white);
+}
+.about__title {
+  padding-top: 40px;
+  color: var(--color-white);
+}
 .about__majors {
   display: flex;
   justify-content: space-between;
   margin: 80px 0;
 }
+.about__majors p,
+.about__majors li {
+  font-size: var(--font-regular);
+}
 .major__icon {
-  width: 170px;
-  height: 170px;
-  line-height: 170px;
+  width: 200px;
+  height: 200px;
+  line-height: 200px;
   font-size: 70px;
   margin: auto;
-  color: var(--color-blue);
-  border: 1px solid var(--color-blue);
+  color: var(--color-dark-white);
+  border: 3px solid var(--color-light-white);
   border-radius: 50%;
   margin-bottom: 16px;
 }
@@ -197,12 +210,8 @@ h3 {
   transition: all var(--animation-duration) ease;
 }
 .major__icon:hover i {
-  color: var(--color-pink);
-  transform: rotate(-30deg) scale(1.1);
-}
-.major__title,
-.major__description {
-  color: var(--color-dark-grey);
+  color: var(--color-orange);
+  transform: rotate(-45deg) scale(1.2);
 }
 .major__description {
   font-size: var(--font-small);
@@ -246,12 +255,20 @@ h3 {
 .skillset__right {
   flex-basis: 40%;
 }
+.skillset__right h3 {
+  margin: 0;
+  padding: 28px 40px;
+}
 .tools {
   background-color: var(--color-grey);
-  padding: 20px;
+  height: 100%;
 }
-.etc {
-  padding: 20px;
+
+.tools__list {
+  height: 80%;
+  display: flex;
+  flex-direction: column;
+  line-height: 100px;
 }
 
 /* Work */
