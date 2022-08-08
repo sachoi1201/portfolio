@@ -279,6 +279,8 @@ h3 {
 #work {
   background: linear-gradient(#d1c3fa, #d1e2fa);
   height: 1000px;
+  padding-left: 0;
+  overflow: hidden;
 }
 .work__title {
   color: white;
@@ -327,17 +329,11 @@ h3 {
 .work__projects {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
+  width: 400vw;
+
+  /* justify-content: center; */
   opacity: 1;
   transition: all var(--animation-duration) ease-out;
-}
-.work__projects img {
-  width: 100%;
-  height: 100%;
-}
-.work__projects i {
-  width: 1000px;
-  height: 1000px;
 }
 .work__projects.anim-out {
   opacity: 0;
@@ -346,10 +342,13 @@ h3 {
 .project {
   position: relative;
   display: flex;
+  float: left;
   justify-content: center;
   align-items: center;
-  width: 280px;
-  height: 250px;
+  /* width: 280px; */
+  width: 100vw;
+  margin: 0 auto;
+  height: 100%;
   margin: 2px;
   background-color: var(--color-light-white);
 }
@@ -357,7 +356,9 @@ h3 {
   display: none;
 }
 .project__img {
-  max-width: 100%;
+  width: 100vw;
+  height: 500px;
+  max-width: 1000px;
   max-height: 100%;
   align-items: center;
 }

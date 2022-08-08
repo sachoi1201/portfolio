@@ -26,6 +26,23 @@ navbarMenu.addEventListener("click", (event) => {
   navbarMenu.classList.remove("open");
   scrollIntoView(link);
 });
+// Make work button
+const workProject = document.querySelector(".work__projects");
+let Now = 1;
+document.querySelector(".btn1").addEventListener("click", function () {
+  workProject.style.transform = "translateX(0vw)";
+  Now = 1;
+});
+
+document.querySelector(".btn2").addEventListener("click", function () {
+  workProject.style.transform = "translateX(-100vw)";
+  Now = 2;
+});
+
+document.querySelector(".btn3").addEventListener("click", function () {
+  workProject.style.transform = "translateX(-200vw)";
+  Now = 3;
+});
 // Navbar toggle button for small screen
 const navbarToggleBtn = document.querySelector(".navbar__toggle-btn");
 navbarToggleBtn.addEventListener("click", () => {
