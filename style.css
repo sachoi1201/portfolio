@@ -138,7 +138,7 @@ h3 {
 
 .navbar__menu__item:hover {
   border-color: var(--color-white);
-  background-color: var(--color-dark-pink);
+  background-color: var(--color-orange);
 }
 .navbar__toggle-btn {
   position: absolute;
@@ -299,13 +299,13 @@ h3 {
 }
 .category__btn.selected,
 .category__btn:hover {
-  background-color: var(--color-pink);
+  background-color: var(--color-orange);
   color: var(--color-white);
 }
 
 .category__btn.selected,
 .category__btn:hover {
-  background-color: var(--color-pink);
+  background-color: var(--color-orange);
   color: var(--color-white);
 }
 
