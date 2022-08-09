@@ -409,13 +409,26 @@ h3 {
   margin: 32px 0;
   justify-content: center;
 }
+.testimonials__header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.testimonials__title {
+  color: var(--color-white);
+  margin: 48px;
+}
+.testimonials__toggle {
+  font-size: var(--font-large);
+  padding: auto;
+  cursor: pointer;
+}
+
 .testimonial {
   width: 30%;
   margin: 32px;
 }
-.testimonials__title {
-  color: var(--color-white);
-}
+
 .testimonial__avatar {
   width: 150px;
   height: 150px;
@@ -478,7 +491,7 @@ h3 {
   height: 70px;
   font-size: 50px;
   color: var(--color-white);
-  background-color: var(--color-pink);
+  background-color: var(--color-blue);
   border-radius: 50%;
   opacity: 0;
   pointer-events: none;

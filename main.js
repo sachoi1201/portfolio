@@ -90,6 +90,26 @@ const homeHeight = home.getBoundingClientRect().height;
 document.addEventListener("scroll", () => {
   home.style.opacity = 1 - window.scrollY / homeHeight;
 });
+
+// Make friend section hide when clicking toggle button
+const toggleBtn = document.querySelector(".testimonials__toggle");
+const toggleBtn1 = document.querySelector(".testimonials__btn1");
+const toggleBtn2 = document.querySelector(".testimonials__btn2");
+const testimonials = document.querySelector(".testimonials");
+let btnNow = 2;
+toggleBtn.addEventListener("click", function () {
+  if (btnNow == 2) {
+    btnNow = 1;
+    toggleBtn1.style.display = "block";
+    toggleBtn2.style.display = "none";
+    testimonials.style.display = "flex";
+  } else {
+    btnNow = 2;
+    toggleBtn1.style.display = "none";
+    toggleBtn2.style.display = "block";
+    testimonials.style.display = "none";
+  }
+});
 // Show "arrow up" button when scrolling down
 const arrowUp = document.querySelector(".arrow-up");
 document.addEventListener("scroll", () => {
