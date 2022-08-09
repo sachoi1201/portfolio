@@ -1,5 +1,16 @@
 "use strict";
 
+//Make progressbar
+const progressValue = document.querySelector(".progress__value");
+
+document.addEventListener("scroll", function () {
+  const scroll = document.body.scrollTop || document.documentElement.scrollTop;
+  const height =
+    document.documentElement.scrollHeight -
+    document.documentElement.clientHeight;
+  const progressbarPer = (scroll / height) * 100;
+  progressValue.style.width = `${progressbarPer}%`;
+});
 //Make navbar transparent when it is on the top
 const navbar = document.querySelector("#navbar");
 const navbarHeight = navbar.getBoundingClientRect().height;
