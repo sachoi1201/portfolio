@@ -235,6 +235,7 @@ h3 {
 
 #skills {
   background: linear-gradient(#9b72fa, #d1c3fa);
+  padding: 100px;
 }
 .skills__title {
   color: var(--color-white);
@@ -295,6 +296,7 @@ h3 {
   height: 1000px;
   padding-left: 0;
   overflow: hidden;
+  padding-top: 100px;
 }
 .work__title {
   color: white;
