@@ -315,6 +315,7 @@ h3 {
   font-size: var(--font-regular);
   padding: 8px 48px;
   position: relative;
+  margin: 16px;
 }
 .category__btn.selected,
 .category__btn:hover {
@@ -364,7 +365,6 @@ h3 {
   float: left;
   justify-content: center;
   align-items: center;
-  /* width: 280px; */
   width: 100vw;
   margin: 0 auto;
   height: 100%;
@@ -396,9 +396,20 @@ h3 {
   transition: all var(--animation-duration) ease-in;
   margin: auto;
 }
+.project__description button {
+  border: 1px solid var(--color-dark-white);
+  display: inline-block;
+  border-radius: var(--size-border-radius);
+  font-size: var(--font-regular);
+  color: var(--color-dark-white);
+  text-align: center;
+  width: 100px;
+  padding: 8px;
+  margin: 0 auto;
+}
 
 .project:hover .project__description {
-  opacity: 0.8;
+  opacity: 0.5;
   transform: translateY(0px);
 }
 .project__description h3 {
